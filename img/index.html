@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetsVilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar and Hamburger-->
+
+    <header>
+        <div class="container"> 
+           <nav class="navbar links">
+
+              <div class="logo"><img src="./img/sweetsvilla without bg.png" alt=""></div>
+
+              <ul class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" target="_blank">About Us</a>
+                <a href="order.html" target="_blank">Our Menu</a>
+                <a href="#">Contact Us</a>
+                <a href="sign.html" target="_blank"><button class="secondary-btn">Login</button></a>
+                <a href="sign.html" target="_blank"><button class="primary-btn">Sign In</button></a>
+              </ul>
+              <div class="hamburger">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+              </div>
+           </nav>
+        </div>
+     </header>  
+      
+<script>
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+    </script>
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="htext">
+            <h1>SweetsVilla</h1>
+            <p>Our vision at SweetsVilla is to become the premier bakery destination for all things sweet and delicious in our community and beyond.</p>
+            <button class="primary-btn">Read More</button>
+        </div>
+        <div class="himg"><img src="./img/sample.png" alt="loading..."></div>
+    </div>
+
+    <!-- About Us -->
+
+    <div class="about">
+        <div class="aimg"><img src="./img/about.png" alt="loading..."></div>
+        <div class="atext">
+            <h3>About Us</h3>
+            <p>We are one of the finnest bakers in the Bhopal vicinity. With a very wide range of choices and the very best taste we give to our products, Sweetsvilla is your one stop destination for any bakery product. We even have products for all ages according to their likes. With that variety, we even make the products with full hygeine so that no compromises are made for your health. With all these, the pricing we offer is very best so that everone can enjoy our delight.
+            </p>
+            <button class="secondary-btn">See More</button>
+        </div>
+    </div>
+
+    <!-- Our Menu -->
+
+    <div class="menu">
+        <h1>OUR MENU</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/vanilla cake.png" alt="loading...">
+                <h4>Vanilla Cake</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/strawberry.png" alt="loading...">
+                <h4>Strawberry Pastry</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/chocolate.png" alt="loading...">
+                <h4>Chocolate Cake</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/coffee.png" alt="loading...">
+                <h4>Capechino Coffee</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/oreo.png" alt="loading...">
+                <h4>Oreo Shake</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/shake.png" alt="loading...">
+                <h4>Chocolate Shake</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/sandwich.png" alt="loading...">
+                <h4>Grilled Sandwich</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/special cake.png" alt="loading...">
+                <h4>special Cake</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/burger.png" alt="loading...">
+                <h4>Veg Burger</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/pastries.png" alt="loading...">
+                <h4>Tasty Pastries</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/bread.png" alt="loading...">
+                <h4>Morning Bread</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="./img/basket.png" alt="loading...">
+                <h4>Special Basket</h4>
+                <a href="order.html" target="_blank"><button>Order Now</button></a>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+
+    <div class="testimonial">
+        <h1>TESTIMONIALS</h1>
+        <div class="review">
+            <p>"I recently discovered this bakery and I am so glad that I did! The variety of baked goods is amazing and everything is so fresh and delicious. From the flaky croissants to the decadent cakes, I have yet to find something I don't like. The staff is also incredibly friendly and helpful, making the whole experience even better. If you're looking for a top-notch bakery, this is the place to go. I can't recommend it enough!"</p>
+            <h6>- By Nitin Kumar</h6>
+        </div>
+    </div>
+
+    <!-- News & Events -->
+
+    <div class="news">
+        <h1>NEWS & EVENTS</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/dessert fest.png" alt="loading...">
+                <h4>Dessert Fest</h4>
+                <Button class="secondary-btn">More Details</Button>
+            </div>
+            <div class="card">
+                <img src="./img/candy expo.png" alt="loading...">
+                <h4>Candy Expo</h4>
+                <Button class="secondary-btn">More Details</Button>
+            </div>
+            <div class="card">
+                <img src="./img/basket.png" alt="loading...">
+                <h4>Sweets Fair</h4>
+                <Button class="secondary-btn">More Details</Button>
+            </div>
+            <div class="card">
+                <img src="./img/sample.png" alt="loading...">
+                <h4>Bakers Mela</h4>
+                <Button class="secondary-btn">More Details</Button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./img/Sweets Villa.png" alt="">
+            <h5>SweetsVilla</h5>
+            <p>We are one of the finnest bakers in the Bhopal vicinity. With a very wide range of choices and the very best taste we give to our products, Sweetsvilla is your one stop destination for any bakery product. We even have products for all ages according to their likes.</p>
+            <div class="media">
+                <a href="https://www.instagram.com/sweets___villa/" target="_blank"><img src="./img/instagram.png" alt="loading..."></a>
+                <img src="./img/facebook.png" alt="loading...">
+                <img src="./img/twitter.png" alt="loading...">
+                <img src="./img/linkedin.png" alt="loading...">
+            </div>
+        </div>
+        <div class="footer-links">
+        <div class="footer-link">
+            <p>Quick Navigate </p>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Our Services</a>
+            <a href="#">Resources</a>
+        </div>
+
+        <div class="footer-link">
+            <p>Useful Links</p>
+            <a href="#">Contact Us</a>
+            <a href="#">Order Now</a>
+            <a href="#">Our Fest</a>
+            <a href="#">Address</a>
+            <a href="#">News and Events</a>
+        </div>
+
+        <div class="footer-link">
+            <p>Demanded Items</p>
+            <a href="#">Vanilla Ice-cream</a>
+            <a href="#">Oreo Shake</a>
+            <a href="#">Veg Burger</a>
+            <a href="#">Pastries</a>
+            <a href="#">Bread and Bakes</a>
+        </div>
+    </div>
+</div>
+
+<!-- Sub Footer -->
+
+<div class="sub-footer text">   
+    <a href="#">CopyRight &#169; 2023</a>    
+    <a href="#">All rights reserved</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
+</div>
+
+</body>
+</html>
