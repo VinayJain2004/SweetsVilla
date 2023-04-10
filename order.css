@@ -6,13 +6,6 @@
 
 /* navbar */
 
-.nav{
-    display: flex;
-    background-color: #f2d2bd;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 4%;
-}
 .logo img{
     height: 120px;
     border-radius: 100%;
@@ -72,6 +65,50 @@
     box-shadow: 0 0 12px #b7410e;
 }
 
+
+/* HAMBURGER */
+
+li{
+    list-style: none;
+  }
+  a{
+    color: #b7410e;
+    text-decoration: none;
+  }
+  header{
+    background-color: #f2d2bd;
+  }
+  .container{
+    max-width: 1224px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #b7410e;
+  }
+
 /* Order Now */
 
 .order{
@@ -127,6 +164,7 @@
 .follow{
     text-align: center;
     background-color: #f2d2bd;
+    padding: 12px;
 }
 .follow h1{
     color: #b7410e;
@@ -217,33 +255,34 @@
 
 @media (max-width: 900px) {
     
-    /* navbar */
+    /* Hamburger */
 
-    .nav{
-        display: flex;
+    .hamburger{
+        display: block;
+      }
+     .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+      }
+     .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+     .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+     .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 8px;
+        gap: 0;
         flex-direction: column;
-    }
-    .links{
-        display: none;
-    }
-
-    /* header */
-
-    .header{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .htext{
-        width: 80%;
+        background-color: #f2d2bd;
+        width: 100%;
         text-align: center;
-    }
-    .htext h1{
-        font-size: 6vh;
-    }
-    .htext button{
-        width: 120px;
-        margin-bottom: 40px;
-    }
+        transition: 0.3s;
+      }
+     .nav-menu.active{
+        left: 0;
+      }
 
     /* order */
 
@@ -258,6 +297,15 @@
     }
     .card{
         margin: 20px auto;
+    }
+
+    /* follow */
+
+    .follow h1{
+        font-size: 4vh;
+    }
+    .media img{
+        width: 50px;
     }
 
      /* footer */
@@ -281,7 +329,6 @@
         margin-bottom: 0px;
         padding: 0 auto;
         line-height: 18px;
-        width: 80%;
     }
     .footer-logo img{
         width: 30vw;
@@ -293,10 +340,6 @@
         text-align: center;
         font-weight: 900;
         margin-bottom: 15px;
-        margin-top: 20px;
-    }
-    .media img{
-        width: 50px;
         margin-top: 20px;
     }
     .footer-links{
@@ -329,6 +372,12 @@
         font-family: 'Poppins',sans-serif;
         color: #b7410e;
         margin-bottom: 0px;
+    }
+    .media img{
+        width: 50px;
+    }
+    .footer .media img{
+        margin-top: 20px;
     }
 
     /* Sub Footer */
